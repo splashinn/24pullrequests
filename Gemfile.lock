@@ -115,7 +115,7 @@ GEM
       thor (~> 0.14)
     foreman (0.84.0)
       thor (~> 0.19.1)
-    geocoder (1.4.4)
+    geocoder (1.4.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
@@ -237,8 +237,8 @@ GEM
     rack-canonical-host (0.2.3)
       addressable (> 0, < 3)
       rack (>= 1.0.0, < 3)
-    rack-contrib (1.2.0)
-      rack (>= 0.9.1)
+    rack-contrib (2.0.0)
+      rack (~> 2.0)
     rack-google-analytics (1.2.0)
       actionpack
       activesupport
@@ -422,7 +422,7 @@ DEPENDENCIES
   faker
   figaro
   foreman
-  geocoder
+  geocoder (~> 1.4.5)
   gmaps4rails
   i18n-tasks
   jquery-datetimepicker-rails

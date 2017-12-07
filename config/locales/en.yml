@@ -357,7 +357,7 @@ en:
     account_linked: Your Twitter account has been linked! We’ll post a tweet whenever
       you open a pull request.
     account_removed: Your Twitter account has been removed.
-    auth_failed: Authorisation with Twitter has failed.
+    auth_failed: Authorization with Twitter has failed.
     link_account:
       text: Link Your Twitter Account
       tooltip: If you link your Twitter account, we’ll post a tweet whenever you open
@@ -366,9 +366,18 @@ en:
     grinchy_message: "%{user} is being a grinch for Christmas %{year} with no gifted
       pull requests or merged pull requests. Bah humbug!"
     organisations: Member of...
-    pull_request_count: "%{user} has made %{count} total pull requests so far in Christmas
+    pull_request_count:
+      one: "%{user} has made %{count} pull request so far in Christmas
+      %{year}"
+      other: "%{user} has made %{count} pull requests so far in Christmas
       %{year}"
   view_all: View All
   welcome: Welcome, %{user}!
   welcome_back: Welcome back, %{user}
   your_pull_requests: Your Pull Requests
+  unsubscribe:
+    login: 'Github username or email address'
+    title: 'Unsubscribe From Our Mailing List'
+    unsubscribe: 'Unsubscribe'
+    success: You have successfully unsubscribed from our mailing list.
+    invalid_token: Invalid subscription token

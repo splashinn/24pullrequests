@@ -67,13 +67,16 @@ de:
       beliebter Projekte:'
     no_pull_requests: Du hast noch keine Pull Requests gesendet, worauf wartest Du!?
     synchronize: Pull Requests synchronisieren
+    tweet_progress:
+      one:
+      other:
   delete_account:
     are_you_sure: Wir möchten sicherstellen, dass Du wirklich Dein Konto löschen möchtest.
       Dadurch werden Dein Profil und all Deine Pull Requests von der Webseite entfernt.
       Vorgeschlagene Projekte bleiben allerdings bestehen.
     cancel: Ich hab's mir anders überlegt!
     confirm: Löschen bestätigen
-    email_preferences_link:
+    email_preferences_link: E-Mail Einstellungen
     notification_info: Falls Du keine Benachrichtigungen mehr erhalten möchtest, ändere
       einfach Deine %{email_preferences_link}.
     title: Konto löschen
@@ -178,11 +181,11 @@ de:
   preferences:
     delete: Möchtest Du Dein Konto löschen?
     form:
-      daily:
-      email:
-      email_frequency:
-      never:
-      weekly:
+      daily: Täglich
+      email: E-Mail
+      email_frequency: E-Mail Häufigkeit
+      never: Nie
+      weekly: Wöchentlich
     frequency_message: Je nach Deinen Einstellungen senden wir Dir regelmässig hilfreiche
       Emails bis das Projekt vorüber ist. Dabei schlagen wir Dir Projekte vor, zu
       denen Du vielleicht etwas beitragen magst. Zusätzlich sind wir so frei und personalisieren
@@ -195,6 +198,7 @@ de:
     information: Du kannst Deine Email-Einstellungen auch später noch bearbeiten.
     languages: Welche Sprachen beherrschst Du?
     remove: Konto löschen
+    save: Speichern
     save_and_continue: Speichern und weiter
     title: Email-Einstellungen
     twitter: Twitter-Konto

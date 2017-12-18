@@ -56,6 +56,7 @@ uk:
   claim: "Заявити"
   contributors:
     title: "Основні автори"
+    location_privacy:
   dashboard:
     christmas_activity: "Тут ви можете побачити всю діяльність, яку ми зібрали для
       вас напередодні Різдва."
@@ -187,6 +188,7 @@ uk:
     save_and_continue: "Зберегти та продовжити"
     title: "Налаштувати електронну пошти"
     twitter: "Твіттер акаунт"
+    ignore_organisations:
   preferred_languages: "Мови, що вам подобаються"
   projects:
     admin:
@@ -249,7 +251,7 @@ uk:
       tooltip: "Якщо ваш твіттер акаунт буде прив'язано, ми зможемо постити в твіттер,
         кожен раз, як ви відкріваєте пул реквест!"
   user:
-    grinchy_message: "%{user} не надіслав жодного пул реквеста в %{year} році. Прикро!"
+    no_current_pr_message:
     organisations:
     pull_request_count: "%{user} надіслав %{count} пул реквестів в %{year} році."
   view_all: "Подивится"

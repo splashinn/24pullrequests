@@ -55,7 +55,8 @@ ja:
   claim: 主張
   clear: 削除
   contributors:
-    title: "貢献者"
+    title: 貢献者
+    location_privacy: すべての位置データは、現在アクティブなユーザのパブリックなGitHubプロファイルから取得されます。
   dashboard:
     christmas_activity: ここではクリスマスまでにあなたが行い、トレースされたすべての活動を見ることができます。
     gift_it: Gift it!
@@ -237,6 +238,8 @@ ja:
     setup_help: 24 Pull Requests を始めるにあたり、まず最初に以下のフォームに記入してください。
     title: アカウントを設定してください
     twitter: Twitter アカウント
+    ignore_organisations: もし、このサイトで追跡したくない公開リポジトリに対して定期的に貢献している場合は、ここに組織名を追加してください。コンマで区切って複数の組織を追加できます。オープンソースのリポジトリのコードを職場で書いたり、自分で管理している場合に役立ちます。
+    ignored_organisations: 無視する組織
   preferred_languages: 好きな言語
   projects:
     admin:
@@ -296,8 +299,7 @@ ja:
       text: あなたの Twitter アカウントとリンクしましょう
       tooltip: あなたの Twitter アカウントとリンクすると、あなたがOSSへの pull request をする度に私たちはツイートします!
   user:
-    grinchy_message: "%{user} is being a grinch for %{year} with no gifted pull requests.
-      Bah humbug!"
+    no_current_pr_message:
     organisations: 組織
     pull_request_count: "%{user}さんは%{year}の12月の間に合計%{count}個の pull request をしました"
   view_all: すべてを見る

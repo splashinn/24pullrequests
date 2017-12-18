@@ -65,6 +65,7 @@ nb:
   clear: Tøm
   contributors:
     title: Hoved-bidragsytere
+    location_privacy:
   dashboard:
     christmas_activity: Dette er hvor du kan se all aktiviteten vi har sett fra deg
       opp mot jul.
@@ -204,6 +205,7 @@ nb:
     save_and_continue: Lagre og fortsett
     title: Velg dine preferanser
     twitter: Twitter-konto
+    ignore_organisations:
   preferred_languages: Foretrukkede språk
   projects:
     admin:
@@ -265,7 +267,7 @@ nb:
       tooltip: Om du linker opp Twitter-kontoen din så legger vi et en tweet når du
         åpner en pull request!
   user:
-    grinchy_message: "%{user} er en grinch i %{year} med ingen pull requests. Humbug!"
+    no_current_pr_message:
     organisations: Medlem av...
     pull_request_count: "%{user} har laget %{count} pull requests totalt så langt
       i %{year}"

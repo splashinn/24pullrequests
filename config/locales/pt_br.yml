@@ -73,6 +73,7 @@ pt_br:
   clear: Limpar
   contributors:
     title: Contribuidores
+    location_privacy:
   dashboard:
     christmas_activity: Aqui é onde você pode ver todas as atividades que nós estamos
       monitorando para você na corrida até o Natal.
@@ -260,6 +261,7 @@ pt_br:
       o formulário abaixo.
     title: Configure suas preferências de email
     twitter: Twitter
+    ignore_organisations:
   preferred_languages: Linguagens de preferência
   projects:
     admin:
@@ -322,8 +324,7 @@ pt_br:
       tooltip: Se você integrar sua conta do Twitter, nós iramos tweetar sempre que
         você fizer em pull request!
   user:
-    grinchy_message: "%{user} você está parecendo um grinch em %{year}, não fez nenhum
-      pull requests de presente. Bah humbug!"
+    no_current_pr_message:
     organisations: Membro de...
     pull_request_count: "%{user} fez %{count} pull requests até agora, em %{year}"
   view_all: Ver todos

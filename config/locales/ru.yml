@@ -60,6 +60,7 @@ ru:
   clear: "Очистить"
   contributors:
     title: "Основные авторы"
+    location_privacy:
   dashboard:
     christmas_activity: "Здесь вы сможете увидеть всю вашу активность в преддверии
       Рождества."
@@ -246,6 +247,7 @@ ru:
     setup_help: "Для того, что бы начать 24 Пулл-реквеста, пожалуйста, сначала заполните следующую форму"
     title: "Настройки рассылки"
     twitter: Twitter
+    ignore_organisations:
   preferred_languages: "Предпочитаемые языки"
   projects:
     admin:
@@ -308,8 +310,7 @@ ru:
       tooltip: "Если вы привяжете вашу учетную запись в твиттере, то мы сможем твитить
         про ваши пулл-реквесты!"
   user:
-    grinchy_message: "%{user} в %{year} году не пошлет ни одного пулл-реквеста?! Не
-      верим!"
+    no_current_pr_message:
     organisations: "Организации"
     pull_request_count: "%{user} в %{year} году послал пулл-реквестов: %{count}"
   view_all: "Посмотреть все"

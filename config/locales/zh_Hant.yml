@@ -56,6 +56,7 @@ zh_Hant:
   clear: "取消"
   contributors:
     title: "主要貢獻者"
+    location_privacy: "所有的位置資訊都是從使用者的公開 GitHub 頁面中取得"
   dashboard:
     christmas_activity: "在這裡你可以看到你在聖誕節前的所有動態。"
     gift_it: "送出！"
@@ -218,6 +219,7 @@ zh_Hant:
     setup_help: "在開始參與 24 Pull Requests 之前，請先設定個人偏好。"
     title: "設定你的個人喜好"
     twitter: "Twitter 帳號"
+    ignore_organisations: "如果您有您有一些公開的貢獻不想被我們追蹤，請在此提供該 Repository 所屬的 GitHub 組織名稱，您可以使用逗點間隔並輸入多個組織名稱。這個功能對於開源專案的維護者或是把工作內容公開放在 GitHub 上的人來說可能會很有幫助。"
   preferred_languages: "語言偏好"
   projects:
     admin:
@@ -270,7 +272,7 @@ zh_Hant:
       text: "連結你的 Twitter 帳號"
       tooltip: "如果你選擇連結你的 Twitter 帳號，我們會在你送出 Pull Request 時自動發一則推文！"
   user:
-    grinchy_message: "在 %{year} 年，%{user} 是一個聖誕怪傑，他發起了〇個 Pull Request，鴨蛋！"
+    no_current_pr_message:
     organisations: "組織"
     pull_request_count: "在 %{year} 年， %{user} 一共送出了 %{count} 個 Pull Requests"
   view_all: "檢視全部"

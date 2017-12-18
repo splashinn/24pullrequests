@@ -52,6 +52,7 @@ th:
   claim: "อ้างสิทธิ์"
   contributors:
     title: "ผู้มีส่วนร่วม"
+    location_privacy:
   dashboard:
     christmas_activity: "นี่คือกิจกรรมทั้งหมดของคุณก่อนถึงวันคริสต์มาส"
     gift_it:
@@ -165,6 +166,7 @@ th:
     save_and_continue: "บันทึก"
     title: "ตั้งค่าอีเมล"
     twitter: "บัญชีทวิตเตอร์"
+    ignore_organisations:
   preferred_languages: "ภาาาที่เลือก"
   projects:
     admin:
@@ -218,8 +220,7 @@ th:
       text: "เชื่อมต่อกับบัญชีทวิตเตอร์"
       tooltip: "ถ้าคุณเชื่อมต่อบัญชีทวิตเตอร์เราจะโพสทุกครั้งที่คุณส่ง pull request"
   user:
-    grinchy_message: "%{user} เป็นคนขี้้เหนียวในปี %{year} โดยไม่ได้ส่ง pull request
-      เลย!"
+    no_current_pr_message:
     organisations: "สมาชิกของ..."
     pull_request_count: "%{user} ได้ส่ง %{count} pull request ในปี%{year}"
   view_all: "ดูทั้งหมด"

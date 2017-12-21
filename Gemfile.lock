@@ -120,7 +120,7 @@ GEM
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
     hashdiff (0.3.7)
-    hashie (3.5.6)
+    hashie (3.5.7)
     highline (1.7.10)
     http (3.0.0)
       addressable (~> 2.3)
@@ -201,7 +201,7 @@ GEM
     octicons_helper (4.0.7)
       octicons
       rails
-    octokit (4.7.0)
+    octokit (4.8.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     omniauth (1.7.1)
       hashie (>= 3.4.6, < 3.6.0)

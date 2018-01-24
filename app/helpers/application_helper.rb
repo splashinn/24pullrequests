@@ -21,10 +21,6 @@ module ApplicationHelper
     %(<iframe src="http://ghbtns.com/github-btn.html?user=#{nickname}&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="300" height="20"></iframe>).html_safe
   end
 
-  def gratipay_button(nickname, classes = 'btn btn-success btn-mini btn-block')
-    %(<a href="https://www.gratipay.com/on/github/#{nickname}/" class="#{classes}"><span class="glyphicon glyphicon-heart"></span>Support via Gratipay</a>).html_safe
-  end
-
   def contributors_in(year)
     PullRequest.year(year).load.map(&:user_id).uniq.length
   end
@@ -44,7 +40,7 @@ module ApplicationHelper
   end
 
   def available_locales
-    %w(en es el pt_br fi fr de ru uk th it nb ta tr zh_Hans zh_Hant ja cs)
+    %w(en es el pt_br fi fr de ru uk th it nb ta tr zh_Hans zh_Hant ja cs hi)
   end
 
   def current_translations
@@ -52,22 +48,8 @@ module ApplicationHelper
     @translations[I18n.locale].with_indifferent_access
   end
 
-  def contributing_url(type = 'html')
-    url = 'http://24pullrequests.com/contributing'
-    return url if type == 'text'
-    link_to url, url
-  end
-
-  def twitter_url(type = 'html')
-    url = 'http://twitter.com/24pullrequests'
-    return url if type == 'text'
-    link_to url, url
-  end
-
-  def preferences_url(type = 'html')
-    url = 'http://24pullrequests.com/preferences'
-    return url if type == 'text'
-    link_to url, url
+  def twitter_url
+    'http://twitter.com/24pullrequests'
   end
 
   def unconfirmed_email?

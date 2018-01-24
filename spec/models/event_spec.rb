@@ -11,7 +11,7 @@ describe Event, type: :model do
   it { is_expected.to have_db_column(:longitude).with_options(default: 0.0) }
 
   context 'validations' do
-    let(:event) { FactoryGirl.build(:event) }
+    let(:event) { FactoryBot.build(:event) }
 
     it 'should not pass with a start_at outside of 1st December - 24th December' do
       Timecop.freeze(Time.parse('1st January 1970')) do
@@ -36,6 +36,13 @@ describe Event, type: :model do
       end
     end
 
+    it 'should allow events on December 24th' do
+      Timecop.freeze(Time.parse('15th December 2015 12:00')) do
+        event.start_time = Time.parse('24th December 2015 13:00')
+        expect(event.valid?).to be true
+      end
+    end
+
     context 'after 1st December' do
       it 'should not pass with a start_at within of 1st December - 24th December' do
         Timecop.freeze(Time.parse('1st December 2015')) do
@@ -49,7 +56,7 @@ describe Event, type: :model do
   end
 
   context 'start_time' do
-    let(:event) { FactoryGirl.build(:event) }
+    let(:event) { FactoryBot.build(:event) }
 
     it 'should be formatted correctly' do
       event.start_time = Time.parse('1st December 2015 15:30 GMT')
@@ -60,7 +67,7 @@ describe Event, type: :model do
   context 'can_edit?' do
     context 'for an admin' do
       let(:user) { mock_model(User, admin?: true) }
-      let(:event) { FactoryGirl.build(:event) }
+      let(:event) { FactoryBot.build(:event) }
 
       it 'should return true' do
         expect(event.can_edit?(user)).to be true
@@ -68,7 +75,7 @@ describe Event, type: :model do
     end
 
     context 'when the user is not logged in' do
-      let(:event) { FactoryGirl.build(:event) }
+      let(:event) { FactoryBot.build(:event) }
 
       it 'should return false' do
         expect(event.can_edit?(nil)).to be false
@@ -77,7 +84,7 @@ describe Event, type: :model do
 
     context 'when the user is the event owner logged in' do
       let(:user) { mock_model(User, id: 1, admin?: false) }
-      let(:event) { FactoryGirl.build(:event) }
+      let(:event) { FactoryBot.build(:event) }
 
       it 'should return true' do
         event.user_id = user.id
@@ -87,7 +94,7 @@ describe Event, type: :model do
 
     context 'when the user is not the event owner' do
       let(:user) { mock_model(User, id: 1, admin?: false) }
-      let(:event) { FactoryGirl.build(:event) }
+      let(:event) { FactoryBot.build(:event) }
 
       it 'should return false' do
         event.user_id = 2

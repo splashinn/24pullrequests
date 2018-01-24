@@ -12,6 +12,19 @@
 
 This is the site to help promote the project, highlighting why, how and where to send your pull requests.
 
+## Table of Contents
+
+- [Get started](#get-started)
+- [Contributors](#contributors)
+- [Development](#development)
+  - [Getting Started](#getting-started)
+    - [Installing a Local Server](#installing-a-local-server)
+    - [Using Vagrant](#using-vagrant)
+  - [Tests](#tests)
+  - [Environment variables](#environment-variables)
+  - [Contributing](#contributing)
+  - [Code of Conduct](#code-of-conduct)
+- [Copyright](#copyright)
 
 ## Get started
 
@@ -33,12 +46,12 @@ New to Ruby? No worries! You can follow these instructions to install a local se
 
 #### Installing a Local Server
 
-First things first, you'll need to install Ruby 2.4.2. I recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
+First things first, you'll need to install Ruby 2.5.0. I recommend using the excellent [rbenv](https://github.com/rbenv/rbenv),
 and [ruby-build](https://github.com/rbenv/ruby-build)
 
 ```bash
-rbenv install 2.4.2
-rbenv global 2.4.2
+rbenv install 2.5.0
+rbenv global 2.5.0
 ```
 
 Next, you'll need to make sure that you have PostgreSQL installed. This can be
@@ -137,12 +150,9 @@ as it will use it to learn more about the developers and for pull requests.
 
 Or for more information about using figaro, see https://github.com/laserlemon/figaro
 
-### Note on Patches/Pull Requests
+### Contributing
 
- * Fork the project.
- * Make your feature addition or bug fix.
- * Add tests for it. This is important so I don't break it in a future version unintentionally.
- * Send a pull request. Bonus points for topic branches.
+We are always looking for people to contribute! To find out how to help out, have a look at our [Contributing Guide](CONTRIBUTING.md).
 
 ### Code of Conduct
 
@@ -150,4 +160,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Copyright
 
-Copyright (c) 2016 Andrew Nesbitt. See [LICENSE](https://github.com/24pullrequests/24pullrequests/blob/master/LICENSE) for details.
+Copyright (c) 2018 Andrew Nesbitt. See [LICENSE](https://github.com/24pullrequests/24pullrequests/blob/master/LICENSE) for details.

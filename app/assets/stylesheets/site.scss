@@ -539,6 +539,9 @@ hr {
   border-bottom: 1px dashed #e3e3e3;
 }
 
+abbr[title] {
+  text-decoration: none;
+}
 
 .avatar {
   margin-top: 15px;
@@ -674,6 +677,10 @@ hr {
     -moz-transform: translateY(3px);
     -webkit-transform: translateY(3px);
   }
+}
+
+.twitter-share-button {
+  margin: 0 0 -5px 10px;
 }
 
 //490 is where it starts to look bad on the dashboard

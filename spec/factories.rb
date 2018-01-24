@@ -1,7 +1,7 @@
 require 'securerandom'
 require 'rspec/mocks'
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :aggregation_filter do
     user nil
     title_pattern "MyString"
@@ -31,6 +31,7 @@ FactoryGirl.define do
     gravatar_id { Faker::Internet.email }
     token { SecureRandom.hex }
     location { Faker::Address.country }
+    unsubscribe_token { SecureRandom.uuid }
   end
 
   factory :skill do
